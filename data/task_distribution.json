@@ -1,0 +1,77 @@
+{
+  "release_id": "realclawbench-main-2026-05",
+  "case_count": 281,
+  "tasks": [
+    {
+      "id": "A.file_create",
+      "label": "File creation",
+      "cases": 57,
+      "share_all": 20.3,
+      "subtasks": [
+        {"id": "A1.single_html_game", "description": "Single-file HTML game", "cases": 18, "share_all": 6.4, "share_task": 31.6},
+        {"id": "A3.code_module", "description": "Code module or script", "cases": 14, "share_all": 5.0, "share_task": 24.6},
+        {"id": "A2.web_app_page", "description": "Web app page or courseware", "cases": 7, "share_all": 2.5, "share_task": 12.3},
+        {"id": "A5.doc_report", "description": "Document or report", "cases": 7, "share_all": 2.5, "share_task": 12.3},
+        {"id": "A4.manim_video_script", "description": "Animation or video script", "cases": 6, "share_all": 2.1, "share_task": 10.5},
+        {"id": "A6.binary_data_file", "description": "Data or office file", "cases": 5, "share_all": 1.8, "share_task": 8.8}
+      ]
+    },
+    {
+      "id": "B.code_fix",
+      "label": "Code fixing",
+      "cases": 63,
+      "share_all": 22.4,
+      "subtasks": [
+        {"id": "B1.bug_fix", "description": "Runtime or compile bug fix", "cases": 16, "share_all": 5.7, "share_task": 25.4},
+        {"id": "B4.refactor", "description": "Refactoring and code quality", "cases": 15, "share_all": 5.3, "share_task": 23.8},
+        {"id": "B3.feature_tweak", "description": "Small feature adjustment", "cases": 12, "share_all": 4.3, "share_task": 19.0},
+        {"id": "B5.feature_add", "description": "New feature or module", "cases": 11, "share_all": 3.9, "share_task": 17.5},
+        {"id": "B2.config_fix", "description": "Configuration fix", "cases": 5, "share_all": 1.8, "share_task": 7.9},
+        {"id": "B6.review_report", "description": "Code or document review", "cases": 4, "share_all": 1.4, "share_task": 6.3}
+      ]
+    },
+    {
+      "id": "C.data_query",
+      "label": "Data and codebase querying",
+      "cases": 88,
+      "share_all": 31.3,
+      "subtasks": [
+        {"id": "C3.behavior_logic_analysis", "description": "Behavior or logic analysis", "cases": 27, "share_all": 9.6, "share_task": 30.7},
+        {"id": "C1.locate_specific_code", "description": "Locate specific code or references", "cases": 16, "share_all": 5.7, "share_task": 18.2},
+        {"id": "C5.extract_structured_data", "description": "Extract structured data", "cases": 16, "share_all": 5.7, "share_task": 18.2},
+        {"id": "C2.codebase_inventory_report", "description": "Codebase inventory report", "cases": 15, "share_all": 5.3, "share_task": 17.0},
+        {"id": "C4.print_file_contents", "description": "Print file contents", "cases": 11, "share_all": 3.9, "share_task": 12.5},
+        {"id": "C6.system_env_inspection", "description": "System or environment inspection", "cases": 3, "share_all": 1.1, "share_task": 3.4}
+      ]
+    },
+    {
+      "id": "D.cmd_exec",
+      "label": "Command execution",
+      "cases": 24,
+      "share_all": 8.5,
+      "subtasks": [
+        {"id": "D3.write_script_automation", "description": "Write automation script", "cases": 7, "share_all": 2.5, "share_task": 29.2},
+        {"id": "D1.git_clone_inspect", "description": "Git clone and inspect changes", "cases": 3, "share_all": 1.1, "share_task": 12.5},
+        {"id": "D2.fs_inventory_analyze", "description": "Filesystem inventory and analysis", "cases": 3, "share_all": 1.1, "share_task": 12.5},
+        {"id": "D4.create_files_config", "description": "Create files or edit config", "cases": 3, "share_all": 1.1, "share_task": 12.5},
+        {"id": "D5.install_setup_env", "description": "Package installation or environment setup", "cases": 3, "share_all": 1.1, "share_task": 12.5},
+        {"id": "D6.diagnose_cleanup", "description": "Diagnosis and cleanup", "cases": 3, "share_all": 1.1, "share_task": 12.5},
+        {"id": "D7.doc_convert_audit", "description": "Document conversion or audit", "cases": 2, "share_all": 0.7, "share_task": 8.3}
+      ]
+    },
+    {
+      "id": "E.project_build",
+      "label": "Project building",
+      "cases": 49,
+      "share_all": 17.4,
+      "subtasks": [
+        {"id": "E2.module_feature_impl", "description": "Module or feature implementation", "cases": 18, "share_all": 6.4, "share_task": 36.7},
+        {"id": "E1.web_app_prototype", "description": "Web-app prototype or game", "cases": 9, "share_all": 3.2, "share_task": 18.4},
+        {"id": "E6.spec_doc_update", "description": "Specification or documentation update", "cases": 9, "share_all": 3.2, "share_task": 18.4},
+        {"id": "E5.audit_review_report", "description": "Code or policy audit report", "cases": 7, "share_all": 2.5, "share_task": 14.3},
+        {"id": "E3.skill_plugin_pack", "description": "Skill or plugin packaging", "cases": 4, "share_all": 1.4, "share_task": 8.2},
+        {"id": "E4.scaffold_setup", "description": "Project scaffolding setup", "cases": 2, "share_all": 0.7, "share_task": 4.1}
+      ]
+    }
+  ]
+}

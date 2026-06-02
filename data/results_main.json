@@ -1,0 +1,259 @@
+{
+  "release_id": "realclawbench-main-2026-05",
+  "paper_table": "Table 4",
+  "metrics": ["sample", "task_avg", "subtask_avg", "pass_at_3"],
+  "results": [
+    {
+      "rank": 1,
+      "model": "Claude Opus 4.7",
+      "provider": "Anthropic",
+      "sample": 65.8,
+      "task_avg": 65.7,
+      "subtask_avg": 65.9,
+      "pass_at_3": 75.1,
+      "task_scores": {
+        "file_creation": 66.1,
+        "code_fixing": 58.7,
+        "data_codebase_querying": 68.6,
+        "command_execution": 65.3,
+        "project_building": 70.1
+      },
+      "cost_usd_full_run": 46.54,
+      "verified": true
+    },
+    {
+      "rank": 2,
+      "model": "GPT-5.5",
+      "provider": "OpenAI",
+      "sample": 65.0,
+      "task_avg": 65.4,
+      "subtask_avg": 65.8,
+      "pass_at_3": 75.1,
+      "task_scores": {
+        "file_creation": 70.2,
+        "code_fixing": 57.7,
+        "data_codebase_querying": 64.4,
+        "command_execution": 65.3,
+        "project_building": 69.4
+      },
+      "cost_usd_full_run": 61.87,
+      "verified": true
+    },
+    {
+      "rank": 3,
+      "model": "MiMo V2.5 Pro",
+      "provider": "Xiaomi",
+      "sample": 60.1,
+      "task_avg": 60.7,
+      "subtask_avg": 63.0,
+      "pass_at_3": 74.7,
+      "task_scores": {
+        "file_creation": 54.4,
+        "code_fixing": 61.4,
+        "data_codebase_querying": 59.8,
+        "command_execution": 63.9,
+        "project_building": 63.9
+      },
+      "cost_usd_full_run": 11.87,
+      "verified": true
+    },
+    {
+      "rank": 4,
+      "model": "DeepSeek V4 Pro",
+      "provider": "DeepSeek-AI",
+      "sample": 59.8,
+      "task_avg": 60.1,
+      "subtask_avg": 61.5,
+      "pass_at_3": 76.2,
+      "task_scores": {
+        "file_creation": 52.6,
+        "code_fixing": 60.3,
+        "data_codebase_querying": 61.7,
+        "command_execution": 63.9,
+        "project_building": 61.9
+      },
+      "cost_usd_full_run": null,
+      "verified": true
+    },
+    {
+      "rank": 5,
+      "model": "GLM 5.1",
+      "provider": "Zhipu AI",
+      "sample": 57.4,
+      "task_avg": 58.6,
+      "subtask_avg": 60.3,
+      "pass_at_3": 70.8,
+      "task_scores": {
+        "file_creation": 53.8,
+        "code_fixing": 51.9,
+        "data_codebase_querying": 58.7,
+        "command_execution": 66.7,
+        "project_building": 61.9
+      },
+      "cost_usd_full_run": null,
+      "verified": true
+    },
+    {
+      "rank": 6,
+      "model": "Kimi K2.6",
+      "provider": "Moonshot AI",
+      "sample": 57.7,
+      "task_avg": 58.5,
+      "subtask_avg": 60.2,
+      "pass_at_3": 73.0,
+      "task_scores": {
+        "file_creation": 59.1,
+        "code_fixing": 56.1,
+        "data_codebase_querying": 58.3,
+        "command_execution": 66.7,
+        "project_building": 52.4
+      },
+      "cost_usd_full_run": null,
+      "verified": true
+    },
+    {
+      "rank": 7,
+      "model": "Gemini 3.1 Pro",
+      "provider": "Google DeepMind",
+      "sample": 57.4,
+      "task_avg": 57.6,
+      "subtask_avg": 58.9,
+      "pass_at_3": 69.0,
+      "task_scores": {
+        "file_creation": 55.0,
+        "code_fixing": 52.4,
+        "data_codebase_querying": 60.2,
+        "command_execution": 59.7,
+        "project_building": 60.5
+      },
+      "cost_usd_full_run": null,
+      "verified": true
+    },
+    {
+      "rank": 8,
+      "model": "DeepSeek V4 Flash",
+      "provider": "DeepSeek-AI",
+      "sample": 56.0,
+      "task_avg": 56.9,
+      "subtask_avg": 58.1,
+      "pass_at_3": 71.2,
+      "task_scores": {
+        "file_creation": 60.2,
+        "code_fixing": 50.3,
+        "data_codebase_querying": 55.7,
+        "command_execution": 62.5,
+        "project_building": 55.8
+      },
+      "cost_usd_full_run": null,
+      "verified": true
+    },
+    {
+      "rank": 9,
+      "model": "Qwen 3.6 Plus",
+      "provider": "Alibaba",
+      "sample": 55.8,
+      "task_avg": 55.8,
+      "subtask_avg": 56.1,
+      "pass_at_3": 67.6,
+      "task_scores": {
+        "file_creation": 61.4,
+        "code_fixing": 47.6,
+        "data_codebase_querying": 56.4,
+        "command_execution": 54.2,
+        "project_building": 59.2
+      },
+      "cost_usd_full_run": null,
+      "verified": true
+    },
+    {
+      "rank": 10,
+      "model": "Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "sample": 55.3,
+      "task_avg": 54.7,
+      "subtask_avg": 55.5,
+      "pass_at_3": 70.5,
+      "task_scores": {
+        "file_creation": 56.1,
+        "code_fixing": 49.7,
+        "data_codebase_querying": 59.1,
+        "command_execution": 52.8,
+        "project_building": 55.8
+      },
+      "cost_usd_full_run": null,
+      "verified": true
+    },
+    {
+      "rank": 11,
+      "model": "MiniMax M2.7",
+      "provider": "MiniMax AI",
+      "sample": 53.7,
+      "task_avg": 53.6,
+      "subtask_avg": 53.7,
+      "pass_at_3": 68.3,
+      "task_scores": {
+        "file_creation": 53.8,
+        "code_fixing": 49.2,
+        "data_codebase_querying": 57.2,
+        "command_execution": 55.6,
+        "project_building": 52.4
+      },
+      "cost_usd_full_run": null,
+      "verified": true
+    },
+    {
+      "rank": 12,
+      "model": "Claude Opus 4.6",
+      "provider": "Anthropic",
+      "sample": 52.1,
+      "task_avg": 53.1,
+      "subtask_avg": 52.6,
+      "pass_at_3": 67.3,
+      "task_scores": {
+        "file_creation": 46.8,
+        "code_fixing": 50.3,
+        "data_codebase_querying": 51.5,
+        "command_execution": 58.3,
+        "project_building": 58.5
+      },
+      "cost_usd_full_run": null,
+      "verified": true
+    },
+    {
+      "rank": 13,
+      "model": "Gemma 4 31B",
+      "provider": "Google",
+      "sample": 45.7,
+      "task_avg": 45.3,
+      "subtask_avg": 47.5,
+      "pass_at_3": 51.6,
+      "task_scores": {
+        "file_creation": 25.1,
+        "code_fixing": 47.6,
+        "data_codebase_querying": 56.1,
+        "command_execution": 52.8,
+        "project_building": 44.9
+      },
+      "cost_usd_full_run": 1.35,
+      "verified": true
+    },
+    {
+      "rank": 14,
+      "model": "GPT-OSS 120B",
+      "provider": "OpenAI",
+      "sample": 42.7,
+      "task_avg": 44.2,
+      "subtask_avg": 43.1,
+      "pass_at_3": 57.7,
+      "task_scores": {
+        "file_creation": 35.7,
+        "code_fixing": 47.6,
+        "data_codebase_querying": 42.4,
+        "command_execution": 56.9,
+        "project_building": 38.1
+      },
+      "cost_usd_full_run": 2.04,
+      "verified": true
+    }
+  ]
+}

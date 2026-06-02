@@ -1,0 +1,147 @@
+{
+  "release_id": "realclawbench-live-2026-05-extra",
+  "paper_table": "Table 10",
+  "metrics": ["sample", "task_avg", "pass_at_3"],
+  "results": [
+    {
+      "rank": 1,
+      "model": "GPT-5.5",
+      "provider": "OpenAI",
+      "sample": 71.6,
+      "task_avg": 75.3,
+      "subtask_avg": null,
+      "pass_at_3": 73.5,
+      "verified": true
+    },
+    {
+      "rank": 2,
+      "model": "Claude Opus 4.7",
+      "provider": "Anthropic",
+      "sample": 61.8,
+      "task_avg": 67.9,
+      "subtask_avg": null,
+      "pass_at_3": 70.6,
+      "verified": true
+    },
+    {
+      "rank": 3,
+      "model": "Kimi K2.6",
+      "provider": "Moonshot AI",
+      "sample": 61.8,
+      "task_avg": 61.2,
+      "subtask_avg": null,
+      "pass_at_3": 73.5,
+      "verified": true
+    },
+    {
+      "rank": 4,
+      "model": "Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "sample": 60.8,
+      "task_avg": 57.8,
+      "subtask_avg": null,
+      "pass_at_3": 73.5,
+      "verified": true
+    },
+    {
+      "rank": 5,
+      "model": "Claude Opus 4.6",
+      "provider": "Anthropic",
+      "sample": 59.8,
+      "task_avg": 60.5,
+      "subtask_avg": null,
+      "pass_at_3": 70.6,
+      "verified": true
+    },
+    {
+      "rank": 6,
+      "model": "Gemini 3.1 Pro",
+      "provider": "Google DeepMind",
+      "sample": 58.8,
+      "task_avg": 63.7,
+      "subtask_avg": null,
+      "pass_at_3": 70.6,
+      "verified": true
+    },
+    {
+      "rank": 7,
+      "model": "MiMo V2.5 Pro",
+      "provider": "Xiaomi",
+      "sample": 58.8,
+      "task_avg": 58.5,
+      "subtask_avg": null,
+      "pass_at_3": 76.5,
+      "verified": true
+    },
+    {
+      "rank": 8,
+      "model": "GLM 5.1",
+      "provider": "Zhipu AI",
+      "sample": 57.8,
+      "task_avg": 59.9,
+      "subtask_avg": null,
+      "pass_at_3": 70.6,
+      "verified": true
+    },
+    {
+      "rank": 9,
+      "model": "DeepSeek V4 Pro",
+      "provider": "DeepSeek-AI",
+      "sample": 56.9,
+      "task_avg": 55.4,
+      "subtask_avg": null,
+      "pass_at_3": 64.7,
+      "verified": true
+    },
+    {
+      "rank": 10,
+      "model": "Qwen 3.6 Plus",
+      "provider": "Alibaba",
+      "sample": 54.9,
+      "task_avg": 54.5,
+      "subtask_avg": null,
+      "pass_at_3": 64.7,
+      "verified": true
+    },
+    {
+      "rank": 11,
+      "model": "MiniMax M2.7",
+      "provider": "MiniMax AI",
+      "sample": 52.9,
+      "task_avg": 52.8,
+      "subtask_avg": null,
+      "pass_at_3": 61.8,
+      "verified": true
+    },
+    {
+      "rank": 12,
+      "model": "DeepSeek V4 Flash",
+      "provider": "DeepSeek-AI",
+      "sample": 52.0,
+      "task_avg": 51.4,
+      "subtask_avg": null,
+      "pass_at_3": 61.8,
+      "verified": true
+    },
+    {
+      "rank": 13,
+      "model": "Gemma 4 31B",
+      "provider": "Google",
+      "sample": 49.0,
+      "task_avg": 47.1,
+      "subtask_avg": null,
+      "pass_at_3": 55.9,
+      "verified": true
+    },
+    {
+      "rank": 14,
+      "model": "GPT-OSS 120B",
+      "provider": "OpenAI",
+      "sample": 44.1,
+      "task_avg": 45.8,
+      "subtask_avg": null,
+      "pass_at_3": 61.8,
+      "verified": true
+    }
+  ]
+}

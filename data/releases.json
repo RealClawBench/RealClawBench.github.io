@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-06-01",
+  "source_paper": "15497_RealClawBench_Live_OpenC.pdf",
+  "releases": [
+    {
+      "id": "realclawbench-main-2026-05",
+      "label": "Main 281-case release",
+      "kind": "main",
+      "paper_table": "Table 4",
+      "case_count": 281,
+      "models": 14,
+      "runs_per_model": 3,
+      "ranking_metric": "sample",
+      "frozen": true,
+      "privacy_review": "passed",
+      "created_from": "Wbase",
+      "timeout_seconds": 600,
+      "scoring": "case-specific deterministic Python verifiers",
+      "task_distribution": {
+        "file_creation": 57,
+        "code_fixing": 63,
+        "data_codebase_querying": 88,
+        "command_execution": 24,
+        "project_building": 49
+      },
+      "construction_funnel": {
+        "N0A_raw_calls": 450766,
+        "N0S_sessions": 110170,
+        "N0T_tool_use": 76155,
+        "N1_cleaned": 40713,
+        "N2_hq_pool": 6995,
+        "N3_scorable": 5260,
+        "C_candidates": 414,
+        "F_final": 281
+      },
+      "jsd_final_vs_reference": {
+        "task": 0.0294,
+        "turns": 0.0232,
+        "tools": 0.0448,
+        "calls": 0.0233
+      },
+      "notes": "Primary frozen release used for the paper main leaderboard."
+    },
+    {
+      "id": "realclawbench-live-2026-05-extra",
+      "label": "Live 34-case extra-quality subset",
+      "kind": "live",
+      "paper_table": "Table 10",
+      "case_count": 34,
+      "models": 14,
+      "runs_per_model": 3,
+      "ranking_metric": "sample",
+      "frozen": true,
+      "privacy_review": "passed",
+      "created_from": "Wlive",
+      "timeout_seconds": 600,
+      "scoring": "case-specific deterministic Python verifiers",
+      "construction_funnel": {
+        "N0T_tool_use": 11638,
+        "N1_cleaned": 3505,
+        "N2_hq_pool": 606,
+        "N3_scorable": 512,
+        "F_final": 34
+      },
+      "jsd_live_vs_base": {
+        "task_L1_B1": 0.0135,
+        "task_L3_B3": 0.021,
+        "turns_L1_B1": 0.0099,
+        "turns_L3_B3": 0.0195,
+        "tools_L1_B1": 0.0195,
+        "tools_L3_B3": 0.0411,
+        "calls_L1_B1": 0.0217,
+        "calls_L3_B3": 0.0244
+      },
+      "notes": "Compact live sanity-check subset. It should not replace the main leaderboard."
+    }
+  ]
+}

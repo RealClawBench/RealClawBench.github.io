@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RealClawBench</title>
+    <link rel="stylesheet" href="./assets/styles.css?v=20260602-figures">
+  </head>
+  <body data-page="overview">
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="./index.html">RealClawBench</a>
+        <div class="nav-links">
+          <a href="./index.html">Overview</a>
+          <a href="./distribution.html">Task Distribution</a>
+          <a href="./leaderboard.html">Leaderboard</a>
+          <span class="new-badge">LIVE</span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>RealClawBench: Live OpenClaw Benchmarks from Real Developer-Agent Sessions</h1>
+        <p class="authors">
+          RealClawBench Team
+        </p>
+        <div class="paper-actions" aria-label="Project links">
+          <a href="./realclawbench_paper.pdf">Paper</a>
+          <a href="https://anonymous.4open.science/r/real-claw-bench-582B">Code</a>
+          <a href="./distribution.html">Data</a>
+          <a href="./leaderboard.html">Leaderboard</a>
+        </div>
+        <figure class="hero-figure">
+          <img src="./assets/figures/figure1_realism_gap.png" alt="Figure 1: Realism gap between conventional benchmarks and real demand, and RealClawBench as distribution aligned and rule verified">
+        </figure>
+        <p class="hero-subtitle">
+          RealClawBench targets the realism gap by aligning benchmark tasks with deployed OpenClaw demand while keeping every released case rule verified.
+        </p>
+      </section>
+
+      <section class="section narrow">
+        <h2>Introduction</h2>
+        <p>
+          RealClawBench is a live benchmark framework for developer-facing agents. It starts from real OpenClaw user sessions rather than manually authored prompts, then reconstructs workspaces, rewrites requests into standalone instructions, and scores model runs with deterministic verifiers.
+        </p>
+        <p>
+          The first frozen release contains 281 executable tasks sampled from a much larger deployed-session pool while preserving the source distribution. Across 14 contemporary models, the strongest system solves only 65.8% of tasks, leaving substantial headroom on realistic developer-agent workloads.
+        </p>
+      </section>
+
+      <section class="section stats-grid" aria-label="Benchmark summary">
+        <div>
+          <strong data-stat="main_cases">281</strong>
+          <span>frozen evaluation tasks</span>
+        </div>
+        <div>
+          <strong data-stat="models">14</strong>
+          <span>models in the paper leaderboard</span>
+        </div>
+        <div>
+          <strong>65.8%</strong>
+          <span>best sample-average pass rate</span>
+        </div>
+        <div>
+          <strong>0.0448</strong>
+          <span>maximum final-vs-source JSD</span>
+        </div>
+      </section>
+
+      <section class="section figure-story">
+        <article class="story-card story-wide">
+          <div class="story-copy">
+            <p class="story-kicker">Session-to-task construction</p>
+            <h2>From real OpenClaw sessions to reproducible benchmark releases</h2>
+            <p>
+              RealClawBench begins from real developer-agent sessions and applies privacy screening, environment reconstruction, intent-preserving rewrite, rule-based verifier construction, and frozen release packaging. This lets later OpenClaw windows become live benchmark versions without changing the historical main leaderboard.
+            </p>
+          </div>
+          <figure>
+            <img src="./assets/figures/figure2_pipeline.png" alt="Figure 2: RealClawBench pipeline from existing benchmarks and real OpenClaw sessions to leaderboard evaluation and versioned release">
+            <figcaption>Figure 2. Construction pipeline from deployed sessions to verifier-scored releases.</figcaption>
+          </figure>
+        </article>
+
+        <article class="story-card split-card">
+          <figure>
+            <img src="./assets/figures/figure3_task_distribution.png" alt="Figure 3: Task composition of the final evaluation set with 281 cases, 5 task types, and 31 subtasks">
+            <figcaption>Figure 3. The released set preserves real-demand imbalance across 5 task types and 31 subtasks.</figcaption>
+          </figure>
+          <div class="story-copy">
+            <p class="story-kicker">Real-demand task mix</p>
+            <h2>281 tasks across file creation, code fixing, data querying, commands, and project building</h2>
+            <p>
+              The benchmark is not manually balanced. Frequent real workflows shape the sample-average score, while task and subtask macro-averages reveal whether a model remains robust on smaller, long-tail task families.
+            </p>
+          </div>
+        </article>
+
+        <article class="story-card story-wide">
+          <div class="story-copy">
+            <p class="story-kicker">Model capability and efficiency</p>
+            <h2>Accuracy and cost are not the same story</h2>
+            <p>
+              The main leaderboard shows substantial headroom: the best model reaches 65.8% sample-average pass rate. The cost-accuracy view further shows that higher spending does not automatically translate into higher verifier success, motivating joint reporting of accuracy, robustness, and operational efficiency.
+            </p>
+          </div>
+          <figure>
+            <img src="./assets/figures/figure5_cost_accuracy.png" alt="Figure 5: Accuracy-cost tradeoff between sample-average pass rate and average cost per case">
+            <figcaption>Figure 5. Accuracy-cost tradeoff on the 281-case RealClawBench release.</figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <section class="section two-column final-notes">
+        <div>
+          <h2>Deterministic Scoring</h2>
+          <p>
+            Leaderboard rankings are computed only from case-specific deterministic verifiers. LLM auditing is reserved for scorer analysis, not model ranking.
+          </p>
+        </div>
+        <div>
+          <h2>Versioned Live Benchmarking</h2>
+          <p>
+            The main release stays frozen for controlled comparison, while later windows are published separately to track temporal demand shift.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/app.js?v=20260602-figures"></script>
+  </body>
+</html>

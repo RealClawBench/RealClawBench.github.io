@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RealClawBench Leaderboard</title>
+    <link rel="stylesheet" href="./assets/styles.css?v=20260602-figures">
+  </head>
+  <body data-page="leaderboard">
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="./index.html">RealClawBench</a>
+        <div class="nav-links">
+          <a href="./index.html">Overview</a>
+          <a href="./distribution.html">Task Distribution</a>
+          <a href="./leaderboard.html">Leaderboard</a>
+          <span class="new-badge">LIVE</span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="leaderboard-page">
+      <section class="page-title">
+        <h1>RealClawBench Leaderboard</h1>
+      </section>
+
+      <section class="notice-card">
+        <p id="releaseSummary">
+          <strong>281 tasks</strong> selected in the frozen main release. All scores are computed by case-specific deterministic Python verifiers under the same OpenClaw harness.
+        </p>
+        <p>
+          Check out the <button class="inline-link" id="showLiveRelease" type="button">live extra-quality subset</button> for the later-window sanity check.
+        </p>
+      </section>
+
+      <section class="timeline" aria-label="Release timeline">
+        <div class="timeline-track">
+          <span></span>
+          <span class="active-range"></span>
+          <i class="marker marker-base"></i>
+          <i class="marker marker-live"></i>
+        </div>
+        <div class="timeline-labels">
+          <span>Wbase: 76,155 tool-use sessions</span>
+          <span>Wlive: 11,638 tool-use sessions</span>
+        </div>
+      </section>
+
+      <section class="leaderboard-controls" aria-label="Leaderboard controls">
+        <div class="release-tabs" id="releaseTabs"></div>
+        <label>
+          <span>Sort by</span>
+          <select id="sortMetric">
+            <option value="sample">Sample</option>
+            <option value="task_avg">Task Avg.</option>
+            <option value="subtask_avg">Subtask Avg.</option>
+            <option value="pass_at_3">pass@3</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="table-frame leaderboard-frame">
+        <table class="lcb-table leaderboard-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Model</th>
+              <th>Sample</th>
+              <th>Task Avg.</th>
+              <th>Subtask</th>
+              <th>pass@3</th>
+              <th>File</th>
+              <th>Code</th>
+              <th>Data</th>
+              <th>Command</th>
+              <th>Project</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboardRows"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="./assets/app.js?v=20260602-figures"></script>
+  </body>
+</html>

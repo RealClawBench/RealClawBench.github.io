@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RealClawBench Task Distribution</title>
+    <link rel="stylesheet" href="./assets/styles.css?v=20260602-figures">
+  </head>
+  <body data-page="distribution">
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="./index.html">RealClawBench</a>
+        <div class="nav-links">
+          <a href="./index.html">Overview</a>
+          <a href="./distribution.html">Task Distribution</a>
+          <a href="./leaderboard.html">Leaderboard</a>
+          <span class="new-badge">LIVE</span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="paper-page">
+      <section class="page-title">
+        <h1>RealClawBench Task Distribution</h1>
+      </section>
+
+      <section class="notice-card">
+        <p>
+          <strong>281 tasks</strong> are included in the frozen main release. The benchmark is intentionally not manually balanced: sample-average scores estimate performance on the released real-demand distribution, while task and subtask macro-averages expose long-tail robustness.
+        </p>
+      </section>
+
+      <section class="section stats-grid compact" aria-label="Distribution summary">
+        <div>
+          <strong>5</strong>
+          <span>top-level task types</span>
+        </div>
+        <div>
+          <strong>31</strong>
+          <span>fine-grained subtasks</span>
+        </div>
+        <div>
+          <strong>31.3%</strong>
+          <span>largest task share</span>
+        </div>
+        <div>
+          <strong>8.5%</strong>
+          <span>smallest task share</span>
+        </div>
+      </section>
+
+      <section class="distribution-grid">
+        <div class="figure-panel">
+          <h2>Task Types</h2>
+          <div id="taskTypeBars" class="bars"></div>
+        </div>
+        <div class="figure-panel">
+          <h2>Construction Funnel</h2>
+          <div id="funnelBars" class="bars"></div>
+        </div>
+      </section>
+
+      <section class="table-section">
+        <h2>Subtask Distribution</h2>
+        <div class="table-frame">
+          <table class="lcb-table">
+            <thead>
+              <tr>
+                <th>Task/Subtask</th>
+                <th>Description</th>
+                <th>Cases</th>
+                <th>Share</th>
+                <th>Within Task</th>
+              </tr>
+            </thead>
+            <tbody id="subtaskRows"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/app.js?v=20260602-figures"></script>
+  </body>
+</html>
