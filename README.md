@@ -28,6 +28,10 @@
   <img alt="Scoring" src="https://img.shields.io/badge/Scoring-Deterministic%20Verifiers-f97316">
 </p>
 
+<p align="center">
+  Maintained by the RealClawBench team.
+</p>
+
 ## Overview
 
 RealClawBench is a live benchmark framework built from real OpenClaw developer-agent sessions. Instead of starting from manually authored tasks or public artifacts alone, RealClawBench reconstructs real user requests into reproducible, privacy-screened, automatically scored benchmark cases.
