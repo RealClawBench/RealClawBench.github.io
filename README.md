@@ -18,6 +18,8 @@
   <a href="https://realclawbench.github.io/leaderboard.html">Leaderboard</a>
   ·
   <a href="https://realclawbench.github.io/realclawbench_paper.pdf">Paper</a>
+  ·
+  <a href="https://github.com/side-angle-side/real-claw-bench">Code</a>
 </p>
 
 <p align="center">
